@@ -52,9 +52,9 @@ define pgpool::config::heartbeat (
 ) {
 
   $heartbeat_config = {
-    "heartbeat_destination${id}" => { value => $destination },
-    "heartbeat_port${id}"        => { value => $port },
-    "heartbeat_device${id}"      => { value => $device},
+    "heartbeat_destination${id}"      => { value => $destination },
+    "heartbeat_destination_port${id}" => { value => $port },
+    "heartbeat_device${id}"           => { value => $device},
   }
 
   $heartbeat_defaults = {
